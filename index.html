@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&G</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="header__container">
+
+            <a class="header__logo" href="#!">G&G</a>
+            <!--burger btn-->
+            <button type="button" class="nav__btn" aria-label="Open menu">
+                <span class="nav__btn-icon"></span>
+            </button>
+
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <!--first item-->
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#history">
+                            Про гурт
+                        </a>
+                    </li>
+                    <!--second item-->
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#events">
+                            Концерты
+                        </a>
+                    </li>
+                    <!--third item-->
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#members">
+                            Галерея
+                        </a>
+                    </li>
+                    <!--fourth item-->
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#contacts">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--mobile nav-->
+
+
+        <div class="mobile__inner">
+            <a class="mobile__logo" href="#!">G&G</a>
+            <nav class="mobile__nav">
+                <ul class="mobile__nav-list">
+                    <!--first item-->
+                    <li class="mobile__nav-item">
+                        <a class="mobile__nav-link" href="#history">
+                            Про гурт
+                        </a>
+                    </li>
+                    <!--second item-->
+                    <li class="mobile__nav-item">
+                        <a class="mobile__nav-link" href="#events">
+                            Концерты
+                        </a>
+                    </li>
+                    <!--third item-->
+                    <li class="mobile__nav-item">
+                        <a class="mobile__nav-link" href="#members">
+                            Галерея
+                        </a>
+                    </li>
+                    <!--fourth item-->
+                    <li class="mobile__nav-item">
+                        <a class="mobile__nav-link" href="#contacts">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+    </header>
+    <!--hero-->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">
+                Гурт &lt;&lt;Грим та Грім&gt;&gt;
+            </h1>
+
+
+            <div class="hero__content">
+                <p class="hero__text">
+                    Справжній український рок який, гуркоче в серці.
+
+                </p>
+                <p class="hero__text">
+                    &lt;Грим та Грім&gt; - це поєднання <span class="hero__highlight">потужних</span> гітарніх
+                    рифів,чесних текстів і вибухової енергії сцени.
+                    Ми граємо для тих, хто цінує живий звук, свободу та силу музики.
+
+                </p>
+                <p class="hero__text">
+                    <span class="hero__highlight">Наші концерти</span> — це завжди контакт з залом, драйв і емоції.
+                    Приєднуйся до нас на найближчих виступах і
+                    відчуй цей саунд наживо!
+
+                </p>
+            </div>
+
+            <a class="hero__btn" href="#events">ЗАМОВИТИ КВИТОК</a>
+        </div>
+    </section>
+    <main class="main">
+        <!--events-->
+        <section class="events" id="events">
+            <div class="container">
+                <h2 class="visually-hidden">Найближчі концерти</h2>
+                <div class="event__wrapper">
+                    <table class="events__table">
+
+                        <thead>
+                            <tr>
+                                <th colspan="4" class="events__table-title">Найближчі концерти</th>
+
+                            </tr>
+
+
+                            <tr>
+                                <th>Місто / Заклад</th>
+                                <th>К-сть місць</th>
+                                <th>Дата і час</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="events__grid">
+                            <tr class="events__row">
+                                <td>Київ - Docker G Pub</td>
+                                <td>250</td>
+                                <td>25.10.2025, 19:00</td>
+                                <td><a href="#!" class="events__btn">Замовити квиток</a></td>
+                            </tr>
+                            <tr>
+                                <td>Львів - !FESTrepublic</td>
+                                <td>400</td>
+                                <td>01.11.2025, 20:00</td>
+                                <td><a href="#!" class="events__btn">Замовити квиток</a></td>
+                            </tr>
+                            <tr>
+                                <td>Одеса - Зелений театр</td>
+                                <td>700</td>
+                                <td>09.11.2025, 19:30</td>
+                                <td><a href="#!" class="events__btn">Замовити квиток</a></td>
+                            </tr>
+                            <tr>
+                                <td>Харків - ArtZavod</td>
+                                <td>500</td>
+                                <td>16.11.2025, 19:00</td>
+                                <td><a href="#!" class="events__btn">Замовити квиток</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="ticket-popup">
+            <div class="ticket-popup__content">
+                <span class="ticket-popup__close">&times;</span>
+                <h3>Замовити квиток</h3>
+                <p>Концерт: <span class="popup-event-name"></span></p>
+                <label>Кількість квитків:
+                    <input type="number" min="1" value="1" id="ticket-quantity">
+                </label>
+                <p>Ціна: <span id="ticket-price">500</span> грн</p>
+                <button id="buy-ticket">Купити</button>
+            </div>
+        </div>
+
+        <!--members-->
+        <section class="members" id="members">
+            <div class="container">
+                <h2 class="members__title">Участники гурту</h2>
+
+                <!-- Splide -->
+                <div class="splide members-splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <!--first card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-1.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-1.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Максим - гітара</h3>
+                                </article>
+                            </li>
+
+                            <!--second card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-2.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-2.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Олена - вокал</h3>
+                                </article>
+                            </li>
+                            <!--third card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-3.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-3.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Тарас - барабани</h3>
+                                </article>
+                            </li>
+                            <!--fourth card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-4.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-4.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Максим - гітара</h3>
+                                </article>
+                            </li>
+                            <!--fifth card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-5.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-5.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Олена - вокал</h3>
+                                </article>
+                            </li>
+                            <!--sixth card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-3.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-3.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Тарас - барабани</h3>
+                                </article>
+                            </li>
+                            <!--seventh card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-7.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-7.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Максим - гітара</h3>
+                                </article>
+                            </li>
+                            <!--eighth card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-8.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-8.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Олена - вокал</h3>
+                                </article>
+                            </li>
+                            <!--ninth card-->
+                            <li class="splide__slide">
+                                <article class="members__card">
+                                    <a href="./img/members/card-3.jpg" class="glightbox" data-gallery="members">
+                                        <img class="members__card-img" src="./img/members/card-3.jpg"
+                                            alt="member_photo">
+                                    </a>
+                                    <h3 class="members__card-name">Тарас - барабани</h3>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="members__slider-controls">
+                        <button class="members__arrow-prev">
+                            <span class="visually-hidden">Попередній слайд</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+                        <button class="members__arrow-next">
+                            <span class="visually-hidden">Наступний слайд</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <!-- /Splide -->
+
+            </div>
+        </section>
+
+        <!--history-->
+        <section class="history" id="history">
+            <div class="container">
+                <h2 class="history__title">
+                    Наша історія
+                </h2>
+                <div class="history__flex">
+                    <div class="history__block">
+                        <p class="history__text">
+                            «Грим та Грім» народився з бажання створювати музику, яка відчувається серцем. Ми почали
+                            свій шлях у
+                            маленькій студії в центрі Києва, де кожен акорд, кожне слово було наповнене емоціями та
+                            переживаннями. Це було місце, де народжувались наші перші пісні, де ми вчились грати разом
+                            як єдиний
+                            організм.
+                        </p>
+                        <p class="history__text">
+                            За роки нашої діяльності ми виступили на десятках сцен, від невеликих клубів до великих
+                            фестивалів.
+                            Наша музика — це поєднання традиційного року з сучасними елементами, що робить її унікальною
+                            та
+                            впізнаваною. Ми не боїмось експериментувати з звуком, додаючи електронні елементи або
+                            народні
+                            інструменти.
+                        </p>
+                    </div>
+                    <img class="history__img" src="./img/history/history-concert.jpg" alt="Concert__photo">
+                </div>
+                <p class="history__text">
+                    Кожен наш виступ це не просто концерт, а справжня подія, де ми ділимося своєю енергією з
+                    глядачами
+                    та створюємо неповторну атмосферу. Ми
+                    віримо, що музика має силу об'єднувати людей, створювати спільноти та надихати на зміни.
+                </p>
+                <p class="history__text">
+                    Наш колектив складається з досвідчених музикантів, кожен з яких привносить свій унікальний
+                    стиль та
+                    бачення. Максим створює неймовірні гітарні рифи, Олена зачаровує своїм вокалом, а Тарас
+                    тримає ритм,
+                    який змушує серця битися в унісон з музикою.
+                </p>
+
+            </div>
+        </section>
+        <!--contact-->
+        <section class="contact" id="contacts">
+            <div class="container">
+                <h2 class="contact__title">
+                    Зв'яжись з нами
+                </h2>
+                <p class="contact__text">
+                    Хочеш заказати виступ або маєш питання? Пиши!
+                </p>
+
+                <div class="contact__content">
+                    <form class="contact__form" action="#" method="get">
+                        <div class="contact__row">
+                            <!-- name -->
+                            <div class="contact__field">
+                                <label class="contact__label" for="name">Ім’я</label>
+                                <input class="contact__input" type="text" id="name" name="name" placeholder="Ваше ім’я"
+                                    required>
+                            </div>
+                            <div class="contact__field">
+                                <!-- email -->
+                                <label class="contact__label" for="email">Email</label>
+                                <input class="contact__input" type="email" id="email" name="email"
+                                    placeholder="you@example.com" required>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- message -->
+                        <label class="contact__label" for="message">Повідомлення</label>
+                        <textarea class="contact__textarea" id="message" name="message" rows="5"
+                            placeholder="Розкажіть про себе" required></textarea>
+
+                        <!-- btn -->
+                        <button class="contact__btn" type="submit">Відправити</button>
+                    </form>
+
+                    <!--map-->
+                    <div class="contact__map">
+                        <h3 class="contact__map-title">Наше місцезнаходження</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.2517715294675!2d30.532131689028986!3d50.40153354347924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf00386ab139%3A0xed66fc77f7658154!2z0JrRltC80L3QsNGC0LAgODIzICjQkNC00LzRltC90ZbRgdGC0YDQsNGG0ZbRjyk!5e0!3m2!1sde!2sua!4v1758693463204!5m2!1sde!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Карта розташування офісу G&G">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <p>© 2025 Грим та Грім. Всі права захищені.</p>
+                <div class="footer__socials">
+                    <a href="#!" class="footer__link">Instagram</a>
+                    <a href="#!" class="footer__link">YouTube</a>
+                    <a href="#!" class="footer__link">Facebook</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="mailto:booking@lotoplay" class="footer__email">booking@lotoplay</a> |
+                <a href="tel:+380991234567" class="footer__phone">+38 (099) 123-45-67</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
