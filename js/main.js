@@ -40,20 +40,24 @@ form.addEventListener('submit', function (e) {
         return;
     }
 
-    
+
     const params = new URLSearchParams({ name, email, message });
 
-    
+
     fetch(form.action + '?' + params.toString(), {
         method: 'GET'
     })
         .then(() => {
             alert('Форма успішно відправлена!');
-            form.reset(); 
+            form.reset();
         })
         .catch(() => {
             alert('Сталася помилка при відправці форми');
         });
+});
+
+document.addEventListener('focusin', (e) => {
+    console.log(e.target);
 });
 
 // splide
@@ -82,7 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // glightbox
 const lightbox = GLightbox({
-    selector: '.glightbox'
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
 });
 
 // ticket popup

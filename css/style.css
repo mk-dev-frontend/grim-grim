@@ -133,7 +133,7 @@ body {
 /*-----hero-------*/
 
 .hero {
-  background-image: url("../img/hero/bg-cover.jpg");
+  background-image: url("../img/hero/bg-cover.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -169,7 +169,9 @@ body {
   background-color: #ffd700;
   border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .hero__btn:hover {
@@ -444,7 +446,7 @@ body {
   display: block;
   width: 35%;
   padding: 8px 20px;
-  background-color: #ff4da6;
+  background-color: #d61f7a;
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -519,11 +521,20 @@ body {
   color: #ff4da6;
 }
 
-.footer__bottom a {
+.footer__bottom {
+  display: flex;
+
+  align-items: center;
+
   margin-top: 20px;
   font-size: 14px;
   color: #fff;
   transition: opacity 0.3s ease;
+}
+
+.footer__email::after {
+  content: "|";
+  margin: 0 10px;
 }
 
 .footer__bottom a:hover {
@@ -581,7 +592,9 @@ body {
     width: 40px;
     height: 5px;
     background-color: #fff;
-    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+    transition:
+      transform 0.15s ease-in,
+      top 0.15s ease-in 0.15s;
   }
 
   .nav__btn-icon::before {
@@ -624,7 +637,9 @@ body {
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);
-    transition: opacity 0.3s, transform 0.3s;
+    transition:
+      opacity 0.3s,
+      transform 0.3s;
   }
   .mobile__inner.active {
     display: flex;
@@ -659,6 +674,7 @@ body {
     width: 100%;
     border-collapse: collapse;
   }
+
   table,
   thead,
   tbody,
@@ -668,6 +684,7 @@ body {
     display: block;
     width: 100%;
   }
+
   .events__table-title {
     display: block;
     text-align: center;
@@ -684,28 +701,35 @@ body {
   .event__wrapper {
     border: none;
   }
+
   .events__table td {
-    border-top: none;
-    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
   }
+
   thead tr:nth-child(2) {
     display: none;
   }
+
   tr:not(.events__table-title) {
     margin-bottom: 1rem;
   }
-  td {
-    position: relative;
-    padding-left: 50%;
-    text-align: left;
-    border: none;
-  }
+
   td::before {
     content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 45%;
-    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .events__table td:last-child::before {
+    display: none;
   }
 
   /*---members---*/
@@ -750,6 +774,8 @@ body {
     width: 100%;
     height: 300px;
   }
+  .footer__top {
+  }
 }
 
 @media (max-width: 480px) {
@@ -777,6 +803,7 @@ body {
   .events {
     padding: 20px;
   }
+
   .events__table {
     min-width: 100%;
   }
@@ -789,7 +816,6 @@ body {
 
   .events__grid {
     display: block;
-    gap: 0;
   }
 
   table,
@@ -810,21 +836,25 @@ body {
     padding: 10px;
   }
 
-  td {
-    position: relative;
-    padding-left: 50%;
-    text-align: left;
+  .events__table td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
     border: none;
     margin-bottom: 5px;
   }
 
   td::before {
     content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    width: 45%;
-    font-weight: bold;
-    white-space: nowrap;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .events__table td:last-child::before {
+    display: none;
   }
 
   .events__table-title {
@@ -881,7 +911,6 @@ body {
     width: 100%;
   }
 
-
   /*---footer--*/
   .footer {
     padding: 20px 0;
@@ -901,6 +930,20 @@ body {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
+  }
+}
+
+
+@media (max-width: 390px) {
+    .footer__bottom {
+      align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer__email::after {
+    content: "";
+    margin: 0;
   }
 }
 
