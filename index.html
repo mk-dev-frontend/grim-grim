@@ -7,6 +7,7 @@
     <title>Grim & Grim</title>
     <meta name="description"
         content="Responsive landing page for a Ukrainian rock band. Built with HTML, CSS and JavaScript. Features slider, lightbox, contact form and responsive design.">
+    <link rel="preload" as="image" href="./img/hero/bg-cover.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -168,16 +169,20 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Одеса - Зелений театр</td>
-                                <td>700</td>
-                                <td>09.11.2025, 19:30</td>
-                                <td><a href="#!" class="events__btn">Замовити квиток</a></td>
+                                <td data-label="Місто / Заклад">Одеса - Зелений театр</td>
+                                <td data-label="Вартість квитка">700</td>
+                                <td data-label="Дата і час">09.11.2025, 19:30</td>
+                                <td>
+                                    <a href="#!" class="events__btn">Замовити квиток</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Харків - ArtZavod</td>
-                                <td>500</td>
-                                <td>16.11.2025, 19:00</td>
-                                <td><a href="#!" class="events__btn">Замовити квиток</a></td>
+                                <td data-label="Місто / Заклад">Харків - ArtZavod</td>
+                                <td data-label="Вартість квитка">500</td>
+                                <td data-label="Дата і час">16.11.2025, 19:00</td>
+                                <td>
+                                    <a href="#!" class="events__btn">Замовити квиток</a>
+                                </td>
                             </tr>
 
                         </tbody>
@@ -225,7 +230,8 @@
                             <!--second card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-2.webp" class="glightbox" data-gallery="members" data-title="Олена — вокалістка гурту">
+                                    <a href="./img/members/card-2.webp" class="glightbox" data-gallery="members"
+                                        data-title="Олена — вокалістка гурту">
                                         <img class="members__card-img" src="./img/members/card-2.webp"
                                             alt="Олена — вокалістка гурту" width="225" height="225">
                                     </a>
@@ -235,7 +241,8 @@
                             <!--third card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-3.webp" class="glightbox" data-gallery="members" data-title="Тарас — ударник гурту">
+                                    <a href="./img/members/card-3.webp" class="glightbox" data-gallery="members"
+                                        data-title="Тарас — ударник гурту">
                                         <img class="members__card-img" src="./img/members/card-3.webp"
                                             alt="Тарас — ударник гурту" width="492" height="720">
                                     </a>
@@ -245,7 +252,8 @@
                             <!--fourth card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-4.webp" class="glightbox" data-gallery="members" data-title="Максим — гітарист гурту">
+                                    <a href="./img/members/card-4.webp" class="glightbox" data-gallery="members"
+                                        data-title="Максим — гітарист гурту">
                                         <img class="members__card-img" src="./img/members/card-4.webp"
                                             alt="Максим — гітарист гурту" width="1024" height="1024">
                                     </a>
@@ -255,7 +263,8 @@
                             <!--fifth card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-5.webp" class="glightbox" data-gallery="members" data-title="Олена — вокалістка гурту">
+                                    <a href="./img/members/card-5.webp" class="glightbox" data-gallery="members"
+                                        data-title="Олена — вокалістка гурту">
                                         <img class="members__card-img" src="./img/members/card-5.webp"
                                             alt="Олена — вокалістка гурту" width="203" height="249">
                                     </a>
@@ -265,7 +274,8 @@
                             <!--sixth card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-3.webp" class="glightbox" data-gallery="members" data-title="Тарас — ударник гурту">
+                                    <a href="./img/members/card-3.webp" class="glightbox" data-gallery="members"
+                                        data-title="Тарас — ударник гурту">
                                         <img class="members__card-img" src="./img/members/card-3.webp"
                                             alt="Тарас — ударник гурту" width="492" height="720">
                                     </a>
@@ -275,7 +285,8 @@
                             <!--seventh card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-7.webp" class="glightbox" data-gallery="members" data-title="Максим — гітарист гурту">
+                                    <a href="./img/members/card-7.webp" class="glightbox" data-gallery="members"
+                                        data-title="Максим — гітарист гурту">
                                         <img class="members__card-img" src="./img/members/card-7.webp"
                                             alt="Максим — гітарист гурту" width="1024" height="1024">
                                     </a>
@@ -285,7 +296,8 @@
                             <!--eighth card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-8.webp" class="glightbox" data-gallery="members"  data-title="Олена — вокалістка гурту">
+                                    <a href="./img/members/card-8.webp" class="glightbox" data-gallery="members"
+                                        data-title="Олена — вокалістка гурту">
                                         <img class="members__card-img" src="./img/members/card-8.webp"
                                             alt="Олена — вокалістка гурту">
                                     </a>
@@ -295,7 +307,8 @@
                             <!--ninth card-->
                             <li class="splide__slide">
                                 <article class="members__card">
-                                    <a href="./img/members/card-3.webp" class="glightbox" data-gallery="members"  data-title="Тарас — ударник гурту">
+                                    <a href="./img/members/card-3.webp" class="glightbox" data-gallery="members"
+                                        data-title="Тарас — ударник гурту">
                                         <img class="members__card-img" src="./img/members/card-3.webp"
                                             alt="Тарас — ударник гурту" width="194" height="259">
                                     </a>
@@ -418,11 +431,15 @@
                     <!--map-->
                     <div class="contact__map">
                         <h3 class="contact__map-title">Наше місцезнаходження</h3>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.2517715294675!2d30.532131689028986!3d50.40153354347924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf00386ab139%3A0xed66fc77f7658154!2z0JrRltC80L3QsNGC0LAgODIzICjQkNC00LzRltC90ZbRgdGC0YDQsNGG0ZbRjyk!5e0!3m2!1sde!2sua!4v1758693463204!5m2!1sde!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" title="Карта розташування офісу G&G">
-                        </iframe>
+
+                        <div class="map-preview">
+                            <img src="./img/map/map-preview.webp" alt="Карта розташування офісу G&G"
+                                class="contact__map-img">
+
+                            <button class="map-preview__btn">
+                                Відкрити карту
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -130,3 +130,22 @@ buyBtn.addEventListener('click', () => {
     alert(`Куплено ${quantityInput.value || 0} квитків на ${popupEventName.textContent}`);
     popup.classList.remove('active');
 });
+
+
+// map
+
+const mapPreview = document.querySelector('.map-preview');
+
+mapPreview.addEventListener('click', () => {
+    mapPreview.classList.add('map-open');
+
+    mapPreview.innerHTML = `
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.2517715294675!2d30.532131689028986!3d50.40153354347924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf00386ab139%3A0xed66fc77f7658154!2z0JrRltC80L3QsNGC0LAgODIzICjQkNC00LzRltC90ZbRgdGC0YDQsNGG0ZbRjyk!5e0!3m2!1sde!2sua!4v1758693463204!5m2!1sde!2sua"
+            width="600"
+            height="450"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+    `;
+});
